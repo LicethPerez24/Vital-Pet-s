@@ -1,13 +1,13 @@
 export default function Hero() {
   return (
     <>
-      <nav className="h-10 absolute *:list-none flex justify-around w-full items-center p-4 *:text-lg ">
+      <nav className="z-40 h-0 relative *:list-none flex justify-around w-full items-center *:text-lg ">
         <img
           src="src/assets/Logo.png"
           alt="Logo de Vital Pets"
-          className="relative size-36 top-10"
+          className="relative size-28 top-14"
         />
-        <div className="flex items-center pt-12 gap-4">
+        <div className="flex items-center pt-24 gap-4">
           <a
             href="#"
             className="flex justify-center flex-col items-center gap-1 hover:text-red-700"
