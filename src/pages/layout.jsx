@@ -1,4 +1,5 @@
 import Hero from "../components/hero";
+import Products from "../components/products";
 import EmblaCarousel from "../components/slider";
 
 export default function Layout() {
@@ -6,6 +7,7 @@ export default function Layout() {
     <>
       <Hero />
       <EmblaCarousel />
+      <Products />
     </>
   );
 }
