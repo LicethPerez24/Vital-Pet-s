@@ -6,7 +6,7 @@ const EmblaCarousel = () => {
       className="relative w-full z-0"
       data-carousel="slide"
     >
-      <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
+      <div className="relative h-[40rem] overflow-hidden rounded-lg md:h-[40rem]">
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
           <img
             src="src/assets/Vet1.jpg"
