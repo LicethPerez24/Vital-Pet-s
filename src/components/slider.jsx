@@ -9,21 +9,21 @@ const EmblaCarousel = () => {
       <div className="relative h-[40rem] overflow-hidden md:h-[40rem]">
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
           <img
-            src="./src/assets/Vet1.jpg"
+            src="./Vet1.jpg"
             className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             alt="..."
           />
         </div>
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
           <img
-            src="./src/assets/Vet2.jpg"
+            src="./Vet2.jpg"
             className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             alt="..."
           />
         </div>
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
           <img
-            src="./src/assets/Vet3.jpg"
+            src="./Vet3.jpg"
             className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             alt="..."
           />
