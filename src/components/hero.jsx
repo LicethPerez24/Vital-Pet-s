@@ -3,13 +3,13 @@ export default function Hero() {
     <>
       <nav className="z-40 h-0 relative *:list-none flex justify-around w-full items-center *:text-lg ">
         <img
-          src="src/assets/Logo.png"
+          src="./src/assets/Logo.png"
           alt="Logo de Vital Pets"
           className="relative size-28 top-14"
         />
         <div className="flex items-center pt-24 gap-4">
           <a
-            href="#"
+            href="/"
             className="flex justify-center flex-col items-center gap-1 hover:text-red-700"
           >
             <svg
@@ -32,7 +32,7 @@ export default function Hero() {
             <li>Inicio</li>
           </a>
           <a
-            href="#"
+            href="/contacto"
             className="flex justify-center flex-col items-center gap-1 hover:text-red-700 "
           >
             <svg
