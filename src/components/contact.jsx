@@ -1,5 +1,4 @@
 
-
 const ContactForm = () => {
   return (
     <div className="min-h-screen bg-gray-100 p-6 flex items-center justify-center">
