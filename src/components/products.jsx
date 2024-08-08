@@ -15,28 +15,28 @@ export default function Products() {
         <div>
           <img
             className="h-auto max-w-full rounded-lg"
-            src="src/assets/perr1.jpg"
+            src="./src/assets/perr1.jpg"
             alt=""
           />
         </div>
         <div>
           <img
             className="h-auto max-w-full rounded-lg"
-            src="src/assets/perr2.jpg"
+            src="./src/assets/perr2.jpg"
             alt=""
           />
         </div>
         <div>
           <img
             className="h-auto max-w-full rounded-lg"
-            src="src/assets/perr3.jpg"
+            src="./src/assets/perr3.jpg"
             alt=""
           />
         </div>
         <div>
           <img
             className="h-auto max-w-full rounded-lg"
-            src="src/assets/perr1.jpg"
+            src="./src/assets/perr1.jpg"
             alt=""
           />
         </div>
