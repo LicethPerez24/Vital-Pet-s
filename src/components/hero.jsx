@@ -3,7 +3,7 @@ export default function Hero() {
     <>
       <nav className="z-40 h-0 relative *:list-none flex justify-around w-full items-center *:text-lg ">
         <img
-          src="./src/assets/Logo.png"
+          src="./Logo.png"
           alt="Logo de Vital Pets"
           className="relative size-28 top-14"
         />
