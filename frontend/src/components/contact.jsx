@@ -1,4 +1,16 @@
+import { useState, useEffect } from "react";
+
 const ContactForm = () => {
+  const [sent, setSent] = useState(false);
+
+  // useEffect(() => {
+  //   fetch("http://localhost:4000/contacto/success")
+  //     .then((res) => res.json())
+  //     .then((res) => {
+  //       console.log(res);
+  //     });
+  // }, [sent]);
+
   return (
     <div className="min-h-screen bg-gray-100 p-6 flex items-center justify-center">
       <div className="bg-white p-8 rounded-lg shadow-lg flex flex-col lg:flex-row w-full max-w-7xl">
@@ -29,36 +41,54 @@ const ContactForm = () => {
           </div>
         </div>
         <div className="lg:w-1/2">
-          <form>
+          <form
+            method="POST"
+            action="http://localhost:4000/contacto/success"
+            onSubmit={() => {
+              setSent(sent ? false : true);
+            }}
+          >
             <div className="mb-4">
-              <label className="block text-gray-700">Nombre:</label>
+              <label htmlFor="name" className="block text-gray-700">
+                Nombre:
+              </label>
               <input
+                name="name"
                 type="text"
                 className="w-full px-3 py-2 border border-gray-300 rounded"
                 placeholder="Nombre"
               />
             </div>
             <div className="mb-4">
-              <label className="block text-gray-700">E-mail:</label>
+              <label htmlFor="email" className="block text-gray-700">
+                E-mail:
+              </label>
               <input
                 type="email"
+                name="email"
                 className="w-full px-3 py-2 border border-gray-300 rounded"
                 placeholder="E-mail"
               />
             </div>
             <div className="mb-4">
-              <label className="block text-gray-700">Teléfono:</label>
+              <label htmlFor="tel" className="block text-gray-700">
+                Teléfono:
+              </label>
               <input
                 type="text"
+                name="tel"
                 className="w-full px-3 py-2 border border-gray-300 rounded"
                 placeholder="Teléfono"
               />
             </div>
             <div className="mb-4">
-              <label className="block text-gray-700">
+              <label htmlFor="service" className="block text-gray-700">
                 Seleccionar servicio:
               </label>
-              <select className="w-full px-3 py-2 border border-gray-300 rounded">
+              <select
+                name="service"
+                className="w-full px-3 py-2 border border-gray-300 rounded"
+              >
                 <option value="">Seleccionar servicio...</option>
                 <option value="consulta">Consulta</option>
                 <option value="vacunacion">Vacunación</option>
@@ -67,10 +97,11 @@ const ContactForm = () => {
               </select>
             </div>
             <div className="mb-6">
-              <label className="block text-gray-700">
+              <label htmlFor="message" className="block text-gray-700">
                 Escribe aquí tu mensaje:
               </label>
               <textarea
+                name="message"
                 className="w-full px-3 py-2 border border-gray-300 rounded"
                 placeholder="Escribe aquí tu mensaje..."
               ></textarea>
