@@ -1,7 +1,7 @@
-const nodemailer = require("nodemailer");
-require("dotenv").config();
+import nodemailer from "nodemailer";
+import "dotenv/config";
 
-const transporter = nodemailer.createTransport({
+export const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 587,
   secure: false,
@@ -13,5 +13,3 @@ const transporter = nodemailer.createTransport({
     ciphers: "SSLv3",
   },
 });
-
-module.exports = { transporter };
